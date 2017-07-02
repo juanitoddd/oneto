@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roger Gracie Brazilian Jiu-Jitsu Academy in Vienna under Orlando Neto.">
+  <meta name="author" content="">
+  <title>ROGER GRACIE VIENNA</title>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300%7CLato:400,300,400italic,700,700italic,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script type="application/ld+json"> 
+  {
+    "@context" : "http://schema.org",
+    "@type" : "ExerciseGym",
+    "name":"ROGER GRACIE ACADEMY VIENNA",
+    "image": "http://www.onetobjj.at/img/logo.jpg",
+    "address" : {
+      "@type": "PostalAddress",
+      "addressLocality": "Vienna",
+      "addressRegion": "Wien",
+      "postalCode": "1070",
+      "streetAddress": "Kandlgasse 18" 
+    },
+    "geo":{
+        "@type":"GeoCoordinates",
+      "latitude":48.2028676,
+      "longitude":16.34258822
+    },    
+    "url":"http://www.onetobjj.at/",
+    "email":"o.m.neto@hotmail.com",
+    "telephone":"436644627190",
+    "openingHours": ["Mo-Sa 9:00 - 21:00"]
+  } 
+</script>
+  <script>
+  $(document).ready(function(){
+    $.getJSON("http://api.timezonedb.com/v2/get-time-zone?key=LAAPDFWHWDKR&by=position&lat=48.199792599999995&lng=16.354066&format=json", function(data) {
+      var t = new Date( data.timestamp * 1000 );
+      var m = moment(t).format("dddd");
+      $(".timetable").addClass(m.toLowerCase());
+    });
+  });
+  </script>
+</head>
+<body>
+  <div class="outer">
+    <div class="logo-hold">
+      <h1 class="logo">Roger Gracie Academy Vienna</h1>
+    </div>
+    <!--
+    <div class="container">
+      <p class="coming-soon">Coming Soon</p>
+      <p class="border-top-bottom">Our website is under construction but we are in the final stage of the development program</p>
+	    <p class="address"><span class="color">Our Gym is already open</span> - Kandlgasse 18 - 1070 Vienna - Austria</p>
+      <p><a href="oneto_timetable11092016.pdf" class="button">Show Timetable</a></p>
+    </div>
+  -->
+  </div>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Roger Gracie Academy Vienna</h1>
+        <br/>
+      </div>
+    </div>
+
+    <div class="row timetable">
+      <div class="col-md-12 text-center">
+        <h2>Zeitplan</h2>
+        <br/>
+      </div>
+      <div class="col-md-12" style="overflow-x:auto;">
+        <table id="timetable" class="table timetable">
+          <tr class="header">
+            <td></td>
+            <td><div class="day">Montag</div></td>
+            <td><div class="day">Dienstag</div></td>
+            <td><div class="day">Mittwoch</div></td>
+            <td><div class="day">Donnerstag</div></td>
+            <td><div class="day">Freitag</div></td>
+            <td><div class="day">Samstag</div></td>
+          </tr>
+          <tr>
+            <td class="time">9:30</div></td>
+            <td><div class="class">Open Mat</div></td>
+            <td></td>
+            <td><div class="class">Open Mat</div></td>
+            <td></td>
+            <td><div class="class">Open Mat</div></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="time">10:00</div></td>
+            <td><div class="class">BJJ</div></td>
+            <td></td>
+            <td><div class="class">BJJ</div></td>
+            <td></td>
+            <td><div class="class">BJJ(Sparring)</div></td>
+            <td><div class="class">Thaiboxen 10:30</div></td>
+          </tr>
+          <tr>
+            <td class="time">12:00</div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><div class="class">Kids Bjj</div></td>
+          </tr>
+          <tr>
+            <td class="time">13:00</div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><div class="class">Open mat</div></td>
+          </tr>
+          <tr>
+            <td class="time">14:00</div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><div class="class">Ringen</div></td>
+          </tr>
+          <tr>
+            <td class="time">15:45</div></td>
+            <td></td>
+            <td><div class="class">No-gi</div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="time">17:00</div></td>
+            <td><div class="class">Thaiboxen</div></td>
+            <td><div class="class">Kids Bjj</div></td>
+            <td></td>
+            <td><div class="class">Kids Bjj</div></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="time">17:30</div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><div class="class">Boxen</div></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="time">18:30</div></td>
+            <td><div class="class">Boxen</div></td>
+            <td><div class="class">Boxen</div></td>
+            <td><div class="class">Bjj(White Belts)</div></td>
+            <td><div class="class">Boxen</div></td>
+            <td><div class="class">Bjj(Sparring)</div></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="time">19:45</div></td>
+            <td><div class="class">Bjj</div></td>
+            <td><div class="class">Bjj</div></td>
+            <td><div class="class">Bjj(min 3 stripes)</div></td>
+            <td><div class="class">No-gi</div></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="time">21:00</div></td>
+            <td></td>
+            <td></td>
+            <td><div class="class">Thaiboxen</div></td>
+            <td></td>
+            <td><div class="class">Thaiboxen</div></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>Membership</h2>
+        <br/>
+      </div>
+    </div>
+    <div class="row membership-table">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Kinder & Schüler</h3>
+          </div>
+          <div class="panel-body">
+            <div class="price">&euro; 35.00</div>
+            <div class="sub-price">Pro monat*</div>
+            <div class="payments">12 Monate 35,- / Monat oder 390,- Einmalig</div>
+            <div class="payments">6 Monate 40,- / Monat oder 230,- Einmalig</div>
+            <div class="payments">3 Monate 45,- / Monat</div>
+            <br/>
+            <div class="conditions">Gilt bis zum Vollendeten 16. Lebenjahr</div>
+            <div class="conditions">* Bei 12 Monate verbindung</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Studenten</h3>
+          </div>
+          <div class="panel-body">
+            <div class="price">&euro; 60.00</div>
+            <div class="sub-price">Pro monat*</div>
+            <div class="payments">12 Monate 60,- / Monat oder 680,- Einmalig</div>
+            <div class="payments">6 Monate 66,- / Monat oder 380,- Einmalig</div>
+            <div class="payments">3 Monate 72,- / Monat</div>
+            <br/>
+            <div class="conditions">Gilt bis zum Vollendeten 27. Lebenjahr</div>
+            <div class="conditions">* Bei 12 Monate verbindung</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Frauen</h3>
+          </div>
+          <div class="panel-body">
+            <div class="price">&euro; 50.00</div>
+            <div class="sub-price">Pro monat*</div>
+            <div class="payments">12 Monate 50,- / Monat oder 570,- Einmalig</div>
+            <div class="payments">6 Monate 55,- / Monat oder 310,- Einmalig</div>
+            <div class="payments">3 Monate 60,- / Monat</div>
+            <br/>
+            <div class="conditions">* Bei 12 Monate verbindung</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Regular</h3>
+          </div>
+          <div class="panel-body">
+            <div class="price">&euro; 70.00</div>
+            <div class="sub-price">Pro monat*</div>
+            <div class="payments">12 Monate 70,- / Monat oder 790,- Einmalig</div>
+            <div class="payments">6 Monate 78,- / Monat oder 450,- Einmalig</div>
+            <div class="payments">3 Monate 85,- / Monat</div>
+            <br/>
+            <div class="conditions">* Bei 12 Monate verbindung</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="location" class="row">
+      <div class="col-md-12 text-center">
+        <h2>Academy</h2>
+        <br/>
+      </div>
+      <div class="col-md-6">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyADu1NKyM3CDcy5PM4RJ-x-SuVYSEdWsII'></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://www.heilpraktikerbuch.at'>Heilpraktikerbuch.at</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=5fd7f74e6ef30e88192996773efecc01e7fc2f6c'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(48.20287,16.342881600000055),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.20287,16.342881600000055)});infowindow = new google.maps.InfoWindow({content:'<strong>Roger Gracie Academy Vienna</strong><br>Kandlgasse 18<br>1070 Vienna<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      </div>
+      <div class="col-md-6">
+        <h3>Kandlgasse 18, Wien 1070</h3>
+        <ul>
+          <li>Tel: +43 664 462 71 90</li>
+          <li>o.m.neto@hotmail.com</li>
+          <li><a class="facebook" href="https://www.facebook.com/RGAVIENNA/" target="_blank"><img src="/img/facebook.png" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer container-fluid">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <h4>Roger Gracie Academy Vienna</h4>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>Kandlgasse 18, Wien 1070</li>
+          <li>Tel: +43 664 462 71 90</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
